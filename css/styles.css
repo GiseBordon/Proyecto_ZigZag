@@ -34,6 +34,7 @@ body {
 
 .navBar {
     grid-area: navbar;
+
 }
 
 .main {
@@ -63,17 +64,20 @@ li{
     list-style-type: none;
 }
 a,
-.iratienda {
+.iratienda{
 
     text-decoration: none;
-    color: #bc1e48;
+    color: #bc1e48; 
     font-weight: bold;
     padding: 5px;
-    
+}   
 
+/* .nav-item{
+    font-size: 2px;
 }
+ */
 a:hover{
-    color: white ;
+    color: white !important ;
     background: #bc1e48;
     
 }
@@ -114,7 +118,8 @@ p {
 }
 
 li {
-    margin: 2%;
+    margin: 0 2%;
+    justify-items: center
 }
 
 h3 {
@@ -145,7 +150,7 @@ caption {
 
 table {
     width: 100%;
-    border: 2px solid #3D2E29;
+    border: auto solid #3D2E29;
     border-collapse: collapse;
     background-color: rgba(250, 235, 215, 0.61);
 }
@@ -180,6 +185,7 @@ fieldset{
     align-items: center;
 }
 
+
 @media screen and (min-width: 768px) {
     .gridContainer {
         grid-template-areas:
@@ -189,6 +195,7 @@ fieldset{
     }
     li{
         text-align: right;
+        margin: 0 10%;
     }
     .navBar{
         background-color: rgba(250, 235, 215, 0.4)
@@ -226,8 +233,7 @@ fieldset{
     
     li{
         display: inline;
-        font-size: 30px;
-        margin: auto;
+        
     }
     h2 {
         margin: 3rem
@@ -248,5 +254,6 @@ fieldset{
         margin: 0 10% 2%;
     
     }
+
 }
 
