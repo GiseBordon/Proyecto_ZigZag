@@ -1,0 +1,83 @@
+@import'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vv;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+    padding: 2% 0;
+    color: $color_texto;
+    font-size: normal;
+    text-shadow: #bd836a 2px 1px;
+    text-align: center;
+
+}
+
+p {
+    color: $color_texto;
+    margin-bottom: 3%;
+
+}
+
+a {
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: $color_texto !important;
+        background: $color_background;
+        border-radius: 10px;
+    }
+}
+
+.barra,
+footer {
+
+    background-color: $color_background;
+}
+
+footer {
+    font-size: $text_size_footer;
+    text-align: start;
+}
+
+.redes {
+    display: inline-block;
+    justify-content: space-around;
+
+}
+
+h2 {
+    color: $color_texto;
+    text-align: center;
+    margin: 2% 0
+}
+
+.formulario {
+    margin: auto;
+
+
+}
+
+input,
+textarea {
+    width: 100%;
+}
+
+button {
+    width: 10%;
+
+}
