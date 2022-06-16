@@ -1,3 +1,12 @@
-$color_texto:#bc1e48;
-$color_background:rgba(222, 176, 135, 0.317);
-$text_size_footer: 0.5em
+//Mapa de colores
+
+$colors:(texto_principal:#bc1e48, shadow: #bd836a, texto_secundario:black, background:rgba(222, 176, 135, 0.317));
+
+//mapa de fuentes
+$fonts: (wide_screen_font: Dancing Script,
+    narrow_screen_font: Roboto);
+
+
+$text_size_footer: 0.5em;
+
+$tablet:768px
