@@ -17,17 +17,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto:ital@1&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="barra">
+        <div>
             <nav class="navbar navbar-expand-md navbar-light">
-                <div class="container-fluid">
+                <div class="container">
                     <a class="navbar-brand" href="#">
-                        <img src="./images/logo_marca.jpg" alt="Logo" width="150" height="150">
+                        <img src="./images/logo_marca.jpg" alt="Logo" width="120" height="120">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -43,16 +44,16 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    Tienda
+                                    Productos
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="./pages/tienda.html">Amigurumis</a></li>
-                                    <li><a class="dropdown-item" href="./pages/tienda.html">Indumentaria</a></li>
-                                    <li><a class="dropdown-item" href="./pages/tienda.html">Decoracion</a></li>
+                                    <li><a class="dropdown-item" href="./pages/amigurumis.html">Amigurumis</a></li>
+                                    <li><a class="dropdown-item" href="./pages/indumentaria.html">Indumentaria</a></li>
+                                    <li><a class="dropdown-item" href="./pages/decoracion.html">Decoracion</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="./pages/tienda.html">Especiales</a></li>
+                                    <li><a class="dropdown-item" href="./pages/especiales.html">Especiales</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -67,58 +68,70 @@
                 </div>
             </nav>
         </div>
-        <h1 class=" display-1 animate__animated animate__zoomIn">Bienvenidos a ZigZag</h1>
-        <p class=" display-4 text-center"> Somos un sitio tejido con amor</p>
     </header>
-    <main>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-                <div class="card h-100">
-                    <img src="./images/gatitos.jpg" class="card-img-top" alt="granjita crochet">
-                    <div class="card-body">
-                        <h3 class="card-title text-center"><a href="./pages/tienda.html">Amigurumis</a></h3>
+    <main class="container">
+        <div>
+            <h1 class=" display-1 animate__animated animate__zoomIn">Bienvenidos a ZigZag</h1>
+            <p class=" display-4 text-center"> Somos un sitio tejido con amor</p>
+        </div>
+        <div>
+            <div class="container row row-cols-1 row-cols-md-2 g-4">
+                <a href="./pages/amigurumis.html">
+                    <div class="card">
+                        <img src="images/gatitos.jpg" class="card-img" alt="gatitos_de_crochet">
+                        <div class="card-img-overlay capa">
+                            <h3 class="card-title text-center">Amigurumis</h3>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="./images/campera_y_sweater_nena.jpg" class="card-img-top" alt="ropa">
-                    <div class="card-body">
-                        <h3 class="card-title text-center"><a href="./pages/tienda.html">Indumentaria</a></h3>
+                </a>
+                <a href="./pages/indumentaria.html">
+                    <div class="card">
+                        <img src="images/campera_y_sweater_nena.jpg" class="card-img" alt="indumentaria">
+                        <div class="card-img-overlay capa">
+                            <h3 class="card-title text-center">Indumentaria</h3>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="./images/front_deco.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title text-center"><a href="./pages/tienda.html">Decoración</a></h3>
+                </a>
+                <a href="./pages/decoracion.html">
+                    <div class="card">
+                        <img src="images/front_deco.jpg" class="card-img" alt="decoracion">
+                        <div class="card-img-overlay capa">
+                            <h3 class="card-title text-center">Decoración y Accesorios</h3>
+                        </div>
                     </div>
-                </div>
+                </a>
+                <a href="./pages/especiales.html">
+                    <div class="card">
+                        <img src="images/front_especiales.jpg" class="card-img" alt="pedidos especiales">
+                        <div class="card-img-overlay capa">
+                            <h3 class="card-title text-center">Especiales</h3>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="./images/set_autumn_deluxe.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h3 class="card-title text-center"><a href="./pages/tienda.html">Especiales</a></h3>
+        </div>
+        <div class=" container redes">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div>
+                        <a href="https://instagram.com/zig.zag.tejidos.sfe?igshid=YmMyMTA2M2Y="><img class="icon"
+                                src="../images/instagram.png" alt="Icono Instagram" width=30px></a>
+                        <a href=https://www.facebook.com/zig.zag.tejidos.sfe> <img class="icon"
+                                src="../images/facebook.png" alt="Icono facebook" width=30px></a>
+                        <a href="https://wa.me/######?text=¡Hola+quiero+conocer+más!"><img class="icon"
+                                src="../images/whatsapp.png" alt="Icono Whatsapp" width=30px></a>
+                        <a href=""><img class="icon" src="./images/casa.png" alt="Icono home" width=30px></a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
-    <footer class="footer">
-        <a href="https://instagram.com/zig.zag.tejidos.sfe?igshid=YmMyMTA2M2Y="><img src="./images/instagram.png"
-                alt="Icono Instagram" width=3%></a>
-        <a href=https://www.facebook.com/zig.zag.tejidos.sfe> <img src="./images/facebook.png" alt="Icono facebook"
-            width=3%></a>
-        <a href=""><img src="./images/whatsapp.png" alt="Icono Whatsapp" width=3%></a>
-        <a href="#">Inicio</a>
-        <p class="fs-1 text-center">&copy; Todos los derechos reservados :: 2022 GPB :: Argentina</p>
+    <footer class="container">
+        <p class="fs-6 text-center">&copy; Todos los derechos reservados :: 2022 GPB :: Argentina</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>

@@ -4,46 +4,68 @@
   box-sizing: border-box; }
 
 body {
-  font-family: Roboto;
+  font-family: Dancing Script;
   background-image: url(../images/background.jpg);
-  background-size: cover;
-  min-height: 100vh;
-  min-width: 100vv;
-  display: grid;
-  grid-template-rows: auto 1fr auto; }
-  @media (min-width: 768px) {
-    body {
-      font-family: Dancing Script; } }
+  background-size: contain;
+  height: 100vh;
+  width: 100vw; }
+
+header {
+  max-width: 95%; }
 
 h1 {
-  padding: 2% 0;
+  padding: 2%;
   color: #bc1e48;
   font-size: normal;
   text-shadow: #bd836a 2px 1px;
   text-align: center; }
 
+.card {
+  position: relative;
+  overflow: hidden;
+  margin: 20px; }
+
+.card img {
+  width: 100%;
+  height: 100%; }
+
+.capa {
+  background-color: rgba(245, 245, 245, 0.637);
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-weight: 400;
+  transform: scale(0);
+  transition: 1s ease; }
+
+.card:hover .capa {
+  transform: scale(1.2); }
+
 p {
   color: #bc1e48;
-  margin-bottom: 3%; }
+  box-sizing: content-box; }
+
+.parrafo1 {
+  text-align: justify; }
+  .parrafo1 .manos {
+    margin: 0 15px;
+    z-index: 1;
+    float: left;
+    border-radius: 12px;
+    opacity: 0.7; }
 
 a {
   font-size: 2em;
   text-decoration: none;
   color: black; }
   a:hover, .btn {
-    color: #bc1e48 !important;
-    background: rgba(222, 176, 135, 0.317);
-    border-radius: 5px; }
-
-footer {
-  font-size: 0.5em;
-  text-align: start; }
-  footer .barra {
-    background-color: rgba(222, 176, 135, 0.317); }
-
-.redes {
-  display: inline-block;
-  justify-content: space-around; }
+    color: #bc1e48 !important; }
 
 h2 {
   color: #bc1e48;
@@ -53,10 +75,24 @@ h2 {
 .formulario {
   padding: 5%;
   margin: auto;
-  border-radius: 5px;
-  background-color: rgba(222, 176, 135, 0.317); }
+  border-radius: 5px; }
 
 .input {
   margin: 10px;
   border-radius: 2px;
   box-shadow: -1px 1px 7px 0px #bd836a; }
+
+.btn {
+  border: solid 3px rgba(222, 176, 135, 0.317);
+  background-color: rgba(250, 235, 215, 0.6); }
+
+iframe {
+  display: inline-block;
+  align-items: center;
+  margin: auto; }
+
+.icon {
+  margin: 5% 5%; }
+  .icon:hover {
+    transform: scale(1.6);
+    transition: 0.1s ease; }

@@ -16,26 +16,24 @@
 }
 
 body {
-    font-family: fuente(narrow_screen_font);
+    font-family: fuente(wide_screen_font);
 
     background: {
         image: url(../images/background.jpg);
-        size: cover;
+        size: contain;
     }
 
-    min-height: 100vh;
-    min-width: 100vv;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    width: 100vw;
 
-    @include tablet {
-        font-family: fuente(wide_screen_font);
+}
 
-    }
+header {
+    max-width: 95%;
 }
 
 h1 {
-    padding: 2% 0;
+    padding: 2%;
     color: color(texto_principal);
     font-size: normal;
 
@@ -45,10 +43,55 @@ h1 {
     }
 }
 
+.card {
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.capa {
+    background-color: rgba(245, 245, 245, 0.637);
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: color(texto_secundario);
+    font-weight: 400;
+    transform: scale(0);
+    transition: 1s ease;
+
+}
+
+.card:hover .capa {
+    transform: scale(1.2);
+}
+
 p {
     color: color(texto_principal);
-    margin-bottom: 3%;
+    box-sizing: content-box;
 
+}
+
+.parrafo1 {
+    text-align: justify;
+
+    .manos {
+        margin: 0 15px;
+        z-index: 1;
+        float: left;
+        border-radius: 12px;
+        opacity: 0.7;
+    }
 }
 
 a {
@@ -58,24 +101,8 @@ a {
 
     &:hover {
         color: color(texto_principal) !important;
-        background: color(background);
-        border-radius: 5px;
+
     }
-}
-
-footer {
-    font-size: $text_size_footer;
-    text-align: start;
-
-    .barra {
-        background-color: color(background);
-    }
-}
-
-.redes {
-    display: inline-block;
-    justify-content: space-around;
-
 }
 
 h2 {
@@ -84,24 +111,45 @@ h2 {
     margin: 2% 0
 }
 
+
+
 .formulario {
     padding: 5%;
     margin: auto;
     border-radius: 5px;
-    background-color: color(background);
-
 
 }
 
-.input{
+.input {
     margin: 10px;
     border-radius: 2px;
     box-shadow: -1px 1px 7px 0px color(shadow);
-    
+
 }
 
 .btn {
+    border: solid 3px color(background);
+    background-color: rgba(250, 235, 215, 0.6);
     @extend a:hover;
 
+
+}
+
+iframe {
+    display: inline-block;
+    align-items: center;
+    margin: auto;
+
+
+}
+
+.icon {
+    margin: 5% 5%;
+
+    &:hover {
+
+        transform: scale(1.6);
+        transition: 0.1s ease;
+    }
 
 }
