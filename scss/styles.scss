@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: fuente(wide_screen_font);
+    font-family: fuente(narrow_screen_font);
 
     background: {
         image: url(../images/background.jpg);
@@ -82,8 +82,9 @@ p {
 
 }
 
-.parrafo1 {
+.parrafo {
     text-align: justify;
+    margin: 0 12px;
 
     .manos {
         margin: 0 15px;

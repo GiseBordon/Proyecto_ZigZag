@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: Dancing Script;
+  font-family: Roboto;
   background-image: url(../images/background.jpg);
   background-size: contain;
   height: 100vh;
@@ -51,9 +51,10 @@ p {
   color: #bc1e48;
   box-sizing: content-box; }
 
-.parrafo1 {
-  text-align: justify; }
-  .parrafo1 .manos {
+.parrafo {
+  text-align: justify;
+  margin: 0 12px; }
+  .parrafo .manos {
     margin: 0 15px;
     z-index: 1;
     float: left;
