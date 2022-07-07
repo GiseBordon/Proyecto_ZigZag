@@ -69,77 +69,80 @@
             </nav>
         </div>
     </header>
-    <div class="row">
-        <div class="col-md-6">
-            <section class="formulario">
-                <form action="envia.php" method="post">
-                    <fieldset>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control input" placeholder="Nombre" name="nombre"
-                                    required>
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control input" placeholder="Apellido" name="apellido"
-                                    required>
-                            </div>
-                            <div class="col-md-12">
-                                <input type="email" class="form-control input" placeholder="Correo electrónico"
-                                    name="email" required>
-                            </div>
-                            <div class="col">
-                                <textarea class="form-control input" id="exampleFormControlTextarea1" rows="10"
-                                    placeholder="Dejanos aquí tu mensaje" name="message"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                    <label class="form-check-label" for="gridCheck">
-                                        Quiero recibir novedades por email
-                                    </label>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <section class="formulario">
+                    <form action="envia.php" method="post">
+                        <fieldset>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control input" placeholder="Nombre" name="nombre"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control input" placeholder="Apellido" name="apellido"
+                                        required>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="email" class="form-control input" placeholder="Correo electrónico"
+                                        name="email" required>
+                                </div>
+                                <div class="col">
+                                    <textarea class="form-control input" id="exampleFormControlTextarea1" rows="10"
+                                        placeholder="Dejanos aquí tu mensaje" name="message"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Quiero recibir novedades por email
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="label-form btn" id="botonEnviar" type="submit"
+                                        value="Enviar">Enviar</button>
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <button class="label-form btn" id="botonEnviar" type="submit"
-                                    value="Enviar">Enviar</button>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-            </section>
+                        </fieldset>
+                    </form>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-12">
+                        <p> <img src="../images/marcador-de-posicion.png" alt="marcador-de-posicion" height="30px">
+                            Podés
+                            encontrarnos todos los domingos en la Feria</p>
+                    </div>
+                    <div class="col-12">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1698.6960891740482!2d-60.6983387420714!3d-31.623110911389713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a96ef819bfdb%3A0x9a813f20ce27f33f!2sFeria%20de%20artesanos%20y%20manualistas%20del%20parque%20federal!5e0!3m2!1ses!2sar!4v1656117446434!5m2!1ses!2sar"
+                            width="80%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6">
+        <div class="redes">
             <div class="row">
-                <div class="col-12">
-                    <p> <img src="../images/marcador-de-posicion.png" alt="marcador-de-posicion" height="30px">
-                        Podés
-                        encontrarnos todos los domingos en la Feria</p>
-                </div>
-                <div class="col-12">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1698.6960891740482!2d-60.6983387420714!3d-31.623110911389713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b5a96ef819bfdb%3A0x9a813f20ce27f33f!2sFeria%20de%20artesanos%20y%20manualistas%20del%20parque%20federal!5e0!3m2!1ses!2sar!4v1656117446434!5m2!1ses!2sar"
-                        width="80%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="redes">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <div>
-                    <a href="https://instagram.com/zig.zag.tejidos.sfe?igshid=YmMyMTA2M2Y="><img class="icon"
-                            src="../images/instagram.png" alt="Icono Instagram" width=30px></a>
-                    <a href=https://www.facebook.com/zig.zag.tejidos.sfe> <img class="icon" src="../images/facebook.png"
-                            alt="Icono facebook" width=30px></a>
-                    <a href="https://wa.me/######?text=¡Hola+quiero+conocer+más!"><img class="icon"
-                            src="../images/whatsapp.png" alt="Icono Whatsapp" width=30px></a>
-                    <a href="../index.html"><img class="icon" src="../images/casa.png" alt="Icono home" width=30px></a>
+                <div class="col-md-12 text-center">
+                    <div>
+                        <a href="https://instagram.com/zig.zag.tejidos.sfe?igshid=YmMyMTA2M2Y="><img class="icon"
+                                src="../images/instagram.png" alt="Icono Instagram" width=30px></a>
+                        <a href=https://www.facebook.com/zig.zag.tejidos.sfe> <img class="icon"
+                                src="../images/facebook.png" alt="Icono facebook" width=30px></a>
+                        <a href="https://wa.me/######?text=¡Hola+quiero+conocer+más!"><img class="icon"
+                                src="../images/whatsapp.png" alt="Icono Whatsapp" width=30px></a>
+                        <a href="../index.html"><img class="icon" src="../images/casa.png" alt="Icono home"
+                                width=30px></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <footer>
         <p class="fs-6 text-center">&copy; Todos los derechos reservados :: 2022 GPB :: Argentina</p>
     </footer>
